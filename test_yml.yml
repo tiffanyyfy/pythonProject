@@ -1,0 +1,21 @@
+server:
+  port: 9190
+#-----------------------------
+spring:
+  application:
+    name: es-server
+  #--------------------------time zone--------------------------
+  jackson:
+    time-zone: GMT+8
+#--------------------------charset--------------------------
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+#-----------------------redis----------------------------
+  redis:
+    database: 1
+    host: ${redis_host:redis.ttpark.link}
+    port: 8700
+    password: jylt2019
