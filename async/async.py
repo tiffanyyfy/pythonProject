@@ -17,6 +17,7 @@ class Async():
 
 
 
+#其他项目引用时此处代码不会执行
 if __name__ == "__main__":
     async_obj = Async()
     asyncio.run(async_obj.runningArsynMth())
